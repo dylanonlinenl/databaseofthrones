@@ -1,0 +1,38 @@
+#character_grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 825px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  img {
+    margin-bottom: 10px;
+    max-width: auto;
+    height: 200px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1,
+  h2 {
+    margin-top: 10px;
+  }
+}
