@@ -7,8 +7,13 @@ import "./styles/characterPage.scss";
 function CharacterPage() {
   return (
     <div className="content-container">
-      <h1>Characters</h1>
-      <Characters></Characters>
+        <div className="content-filter">
+            <h1>Test</h1>
+        </div>
+        <div className="content">
+            <h1>Characters</h1>
+            <Characters></Characters>
+        </div>
     </div>
   );
 }

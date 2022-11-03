@@ -1,7 +1,14 @@
 .content-container {
+  display: flex;
   text-align: center;
   height: 100%;
   padding: 10px;
+  flex-direction: column;
+  .content-filter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   h1 {
     font-size: 40px;
   }
