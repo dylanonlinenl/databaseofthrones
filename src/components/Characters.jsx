@@ -29,7 +29,7 @@ function Characters() {
       <div id="character_grid">
         {characters.map((character) => {
           return (
-            <div id={character.id}>
+            <div id={character.id} className="character-block">
               <img src={character.imageUrl} alt={character.fullName}></img>
               <h1>{character.fullName}</h1>
               <h2>{character.title}</h2>
