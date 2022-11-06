@@ -5,14 +5,14 @@ import "./styles/general.scss";
 import "./styles/characterPage.scss";
 
 function CharacterPage() {
-  return (
-    <div className="content-container">
-        <div className="content">
-            <h1>Characters</h1>
-            <Characters></Characters>
+    return (
+        <div className="content-container">
+            <div className="content">
+                <h1>Characters</h1>
+                <Characters></Characters>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default CharacterPage;

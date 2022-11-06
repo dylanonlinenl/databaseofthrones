@@ -13,13 +13,7 @@
   @media screen and (max-width: 550px) {
     grid-template-columns: 1fr;
   }
-  .character-block {
-    transition: .3s;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -27,18 +21,39 @@
     align-items: center;
     text-align: center;
   }
+
   img {
     margin-bottom: 10px;
     height: 200px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
+
   h1 {
     font-size: 30px;
   }
+
   h2 {
     font-size: 20px;
   }
+
   h1,
   h2 {
     margin-top: 10px;
+  }
+}
+
+#character_detail {
+  .character-return {
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

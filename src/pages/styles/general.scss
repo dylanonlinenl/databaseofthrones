@@ -4,11 +4,19 @@
   height: 100%;
   padding: 10px;
   flex-direction: column;
+
+  .content {
+      .loading-message {
+         margin-top: 100px
+      }
+  }
+
   .content-filter {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+
   h1 {
     font-size: 40px;
   }

@@ -1,32 +1,36 @@
 @import "./includes/vars.scss";
+
 .container {
   max-width: 100%;
   height: 100%;
 }
+
 .container {
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px) {
       align-items: center;
       flex-direction: column;
       text-align: center;
     }
+
     ul {
       display: flex;
       flex-direction: row;
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 900px) {
         align-items: center;
         flex-direction: column;
         padding: 0;
         width: 100%;
       }
+
       li {
         margin-inline: 10px;
         list-style-type: none;
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 900px) {
           align-items: center;
           flex-direction: column;
           padding: 0;
@@ -40,6 +44,7 @@
             background-color: #ffd16f;
           }
         }
+
         a {
           display: inline-block;
           width: 100%;
