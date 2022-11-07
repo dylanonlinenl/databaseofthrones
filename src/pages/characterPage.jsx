@@ -9,7 +9,7 @@ function CharacterPage() {
         <div className="content-container">
             <div className="content">
                 <h1>Characters</h1>
-                <Characters></Characters>
+                <Characters />
             </div>
         </div>
     );
