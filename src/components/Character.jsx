@@ -31,10 +31,7 @@ function Character({ id }) {
     Which returns the Characters page, making sure that Daenerys is never shown. If I specifically check for the value 0, it will work because i can rule it out as an false check.
     Making it work!
     */
-  if (!characterId && characterId !== 0) {
-    return <Characters />;
-  }
-
+  if (!characterId && characterId !== 0) return <Characters />;
   /*
     This didn't work because it was not able to just print out an entire object. I had to specifically call out properties!
     */
@@ -45,8 +42,8 @@ function Character({ id }) {
         <h1>{character.fullName}</h1>
         <h2>{character.title}</h2>
       </div>
-      <div className="character-return" onClick={() => setCharacterId(null)}>
-        <h3>Return to all characters</h3>
+      <div className="character-return">
+        <h3 onClick={() => setCharacterId(null)}>Return to all characters</h3>
       </div>
     </div>
   );

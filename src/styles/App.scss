@@ -39,9 +39,11 @@
           line-height: 75px;
           background-color: #bf9a2f;
           transition: 0.3s;
-          :hover {
-            color: black;
-            background-color: #ffd16f;
+          @media (hover: hover) {
+            :hover {
+              color: black;
+              background-color: #ffd16f;
+            }
           }
         }
 

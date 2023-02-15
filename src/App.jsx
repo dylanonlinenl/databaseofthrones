@@ -1,7 +1,6 @@
 import "./styles/App.scss";
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
 import Characters from "./pages/characterPage";
 import WorldMap from "./pages/worldMap";
 
@@ -17,10 +16,7 @@ class App extends React.Component {
             </div>
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/characters">Characters</Link>
+                <Link to="/">Characters</Link>
               </li>
               <li>
                 <Link to="/world-map">World Map</Link>
@@ -28,8 +24,7 @@ class App extends React.Component {
             </ul>
           </header>
           <Routes>
-            <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/characters" element={<Characters />}></Route>
+            <Route exact path="/" element={<Characters />}></Route>
             <Route exact path="/world-map" element={<WorldMap />}></Route>
           </Routes>
         </div>
