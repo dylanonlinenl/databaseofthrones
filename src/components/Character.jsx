@@ -26,15 +26,8 @@ function Character({ id }) {
 
   if (isLoading) return <h1>Loading...</h1>;
 
-  /*
-    Why this check? Daenerys has an id of 0...if i click on her the check if the characterId does not exist returns true.
-    Which returns the Characters page, making sure that Daenerys is never shown. If I specifically check for the value 0, it will work because i can rule it out as an false check.
-    Making it work!
-    */
   if (!characterId && characterId !== 0) return <Characters />;
-  /*
-    This didn't work because it was not able to just print out an entire object. I had to specifically call out properties!
-    */
+
   return (
     <div id="character_detail">
       <div className="character-block">

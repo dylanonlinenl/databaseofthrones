@@ -39,7 +39,7 @@
     }
   
     h2 {
-      font-size: clamp(.75rem, 3vw, 1.5rem);
+      font-size: clamp(.75rem, 3vw, 1.2rem);
     }
   
     h1,
@@ -49,7 +49,7 @@
   }
 }
 
-#character_detail {
+#character_detail, #continent_detail {
   .character-return {
     display: flex;
     justify-content: center;

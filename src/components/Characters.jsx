@@ -10,7 +10,6 @@ function Characters() {
 
   useEffect(() => {
     let fetchId;
-
     fetchId = fetch(`${CHARACTER_URL}`);
 
     fetchId
@@ -33,15 +32,10 @@ function Characters() {
         <h1>Loading...</h1>
       </div>
     );
+
   if (error) return <div>Error: {error.message}</div>;
 
-  /*
-    This is for exactly the opposite as on the character page, if the characterId is 0...it returns false. Resulting in Daenerys' detail page not showing
-    So by specifically checking on her id, i can return it as true.
-    */
-  if (characterId || characterId === 0) {
-    return <Character id={characterId} />;
-  }
+  if (characterId || characterId === 0) return <Character id={characterId}/>
 
   return (
     <div id="character_grid">
